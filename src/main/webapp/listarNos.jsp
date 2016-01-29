@@ -20,7 +20,7 @@
         }
 
         function testWebSocket() {
-            websocket = new WebSocket(wsUri, "echo");
+            websocket = new WebSocket(wsUri);
             websocket.onopen = function(evt) { onOpen(evt) };
             websocket.onclose = function(evt) { onClose(evt) };
             websocket.onmessage = function(evt) { onMessage(evt) };
@@ -73,7 +73,7 @@
     <h1>Welcome to Alpha Team Cloud Solutions</h1>
     <h2>WebSocket Test</h2>
     <p>Click the send button to transmit the text to the WebSocket server. The server will echo back the text.</p>
-    <textarea id="input">Sample Text</textarea>
+    <textarea id="input">getNo</textarea>
     <button onclick="doSend()">Send</button>
     <div id="output"></div>
 </div>
