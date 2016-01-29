@@ -1,0 +1,39 @@
+<html xmlns="http://www.w3.org/1999/xhtml\" xml:lang=\"pt\">
+<head>
+    <META http-equiv="Pragma" content="no-cache">
+    <META http-equiv="Cache-Control" content="no-cache,no-store">
+    <META HTTP-EQUIV="Content-Script-Type" CONTENT="text/javascript">
+    <META charset="utf-8">
+    <title>Alpha Team</title>
+    <style type="text/css" title="jetty">
+        @import url(css/jetty.css);
+        @import url(css/menu_styles.css);
+    </style>
+</head>
+    <body>
+
+        <div id="header">
+
+        </div>
+
+        <div id="content">
+            <div id='cssmenu'>
+                <ul>
+                    <li ><a href='/'>Home</a></li>
+                    <li class='active'><a href="#">Inserir Recurso</a></li>
+                    <li><a href="resourceList.jsp">Listar Recursos</a></li>
+                    <li><a href="listarNos.jsp">Listar nós</a></li>
+                </ul>
+            </div>
+
+            <h1>File Upload</h1>
+            <form action="rest/upload/pdf"  method="post" enctype="multipart/form-data">
+
+                <p>Select a file : <input type="file" id="myfile" class="text-input" name="file" size="45"  /></p>
+                <input type="submit" class="submit" value="Upload PDF" />
+
+            </form>
+        </div>
+     
+    </body>
+</html>
